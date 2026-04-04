@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <title>Generate QR Code</title>
+</head>
+<body>
+
+    <main>
+        <h1>Welcome!</h1>
+
+
+        <div class="block">
+            <input type="text" id="textInput" placeholder="Enter text for QR Code">
+            <button id="generate_button">Generate QR Code</button>
+
+        </div>
+
+
+        <dialog id="window_dialog">
+            <div id="codeqr" alt="QR Code"></div>
+            <button id="download_button" method="dialog">Download</button>
+            <button id="close_button" method="dialog">Close</button>
+        </dialog>
+
+
+        <script src="script.js"></script>
+
+
+
+    </main>
+    
+</body>
+</html>
