@@ -1,8 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
+
+:root {
+    --background: #161F30;
+    --element: #217373;
+    --font: 'Comic Sans MS', cursive;
+    --radius: 10px;
+    --border: 2px solid var(--element);
+}
+
+
+body, button, input, textarea, select {
+    font-family: var(--font)
+
+}
+
+
+button {
+    background-color: var(--background);
+    color: var(--element);
+    border-radius: var(--radius);
+    border: var(--border);
+
+    height: 35px;
+    
+}
+
+
+
+
+
+
+
+
+
+
 body {
-    background-color: rgba(104, 127, 102, 0.735);
+    background-color: var(--background);
 
     display: flex;
     flex-direction: column;
@@ -12,23 +47,21 @@ body {
     text-align: center;
 
     min-height: 100vh;
+    overflow-y: hidden;
 
-
-    font-family: 'Roboto', sans-serif;    
 }
 
 
 main {
-    flex-direction: column;
-    gap: 15%;
-    background-color: white;
-    color: rgb(104, 127, 102);
-    border-radius: 15px;
+    color: var(--element);
+
+    border-radius: var(--radius);
+
+    border: var(--border);
+
     padding: 10%;
 
 }
-
-
 
 
 .block {
@@ -38,31 +71,38 @@ main {
 }
 
 
-
-#codeqr {
+.input_and_btn {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
+    gap: 2px;
+
 }
 
 
 input {
-    border: 2px solid rgba(104, 127, 102, 0.735);
-    border-radius: 12px;
+    border: var(--border);
+    background-color: var(--background);
+    border-radius: var(--radius);
     height: 25px;
+    color: var(--element);
+    text-align: center;
 }
 
 
-button {
-    background-color: rgba(104, 127, 102, 0.735);
-    color: white;
-    border-radius: 12px;
-    border: 1px solid white;
-
-    height: 35px;
+input:focus {
+    outline: none;
+    box-shadow: none;
 }
+
+
+#clean {
+    width: 31px;
+    height: 31px;
+}
+
+
+
+
+
 
 
 
@@ -70,6 +110,52 @@ button {
 dialog {
     padding: 10%;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
+    border: var(--border);
+    background-color: var(--background);
 
+}
+
+
+#codeqr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+
+.btn_and_btn {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap: 8px;
+}
+
+
+img {
+    border-radius: var(--radius);
+    margin: 5%;
+}
+
+
+
+
+
+
+
+
+
+p, a {
+    color: var(--element)
+}
+
+p {
+    font-size: 77%;
 }

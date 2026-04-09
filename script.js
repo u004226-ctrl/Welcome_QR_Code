@@ -1,6 +1,7 @@
 let generate_button = document.getElementById('generate_button')
 let download_button = document.getElementById('download_button')
 let close_button = document.getElementById('close_button')
+let clean_button = document.getElementById('clean')
 
 
 let input = document.getElementById('textInput')
@@ -30,8 +31,8 @@ generate_button.addEventListener('click', function() {
             text: text,
             width: 178,
             height: 178,
-            colorDark: '#687F66',
-            colorLight: "#ffffff",  
+            colorDark: '#217373',
+            colorLight: "#161F30",  
             correctLevel: QRCode.CorrectLevel.H
 
         })
@@ -69,3 +70,15 @@ download_button.addEventListener('click', function() {
 
 
 );
+
+
+
+clean_button.addEventListener('click', function() {
+    input.value = ''
+})
+
+
+
+clean_button.addEventListener('dblclick', function() {
+    window.open('https://x.com')
+})

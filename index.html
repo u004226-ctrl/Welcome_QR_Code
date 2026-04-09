@@ -10,13 +10,16 @@
     <title>Generate QR Code</title>
 </head>
 <body>
-
     <main>
         <h1>Welcome!</h1>
 
 
         <div class="block">
-            <input type="text" id="textInput" placeholder="Enter text for QR Code">
+            <div class="input_and_btn">
+                <input type="text" id="textInput" placeholder="Enter text for QR Code">
+                <button id="clean" title="Clear input field">X</button>
+            </div>
+
             <button id="generate_button">Generate QR Code</button>
 
         </div>
@@ -24,16 +27,20 @@
 
         <dialog id="window_dialog">
             <div id="codeqr" alt="QR Code"></div>
-            <button id="download_button" method="dialog">Download</button>
-            <button id="close_button" method="dialog">Close</button>
+            <div class="btn_and_btn">
+                <button id="download_button" method="dialog">Download</button>
+                <button id="close_button" method="dialog">Close</button>
+            </div>
+            
         </dialog>
-
 
         <script src="script.js"></script>
 
 
 
     </main>
+
+    <p>Open-source project on <a href="https://github.com/u004226-ctrl/Welcome_QR_Code" target="_blank">GitHub</a>. Use it freely. Double-tap the X button (clear field) on the right.</p>
     
 </body>
 </html>
