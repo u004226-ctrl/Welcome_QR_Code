@@ -5,7 +5,7 @@
 :root {
     --background: #161F30;
     --element: #217373;
-    --font: 'Comic Sans MS', cursive;
+    --font: 'Comic Sans MS';
     --radius: 10px;
     --border: 2px solid var(--element);
 }
